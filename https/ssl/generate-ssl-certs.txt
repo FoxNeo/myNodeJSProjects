@@ -1,0 +1,9 @@
+Thanks to hacksparrow for the helpfully tutorial https://www.hacksparrow.com/node-js-https-ssl-certificate.html
+
+Open Linux terminal and type:
+$ openssl genrsa -out server-key.pem 1024 
+$ openssl req -new -key server-key.pem -out certrequest.csr
+... bunch of prompts
+$ openssl x509 -req -in certrequest.csr -signkey server-key.pem -out server-cert.pem
+
+copy server-key.pem and server-cert to the folder ssl/
