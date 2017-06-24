@@ -39,3 +39,16 @@ function hex2a(hexx) {
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
     return str;
 }
+
+/**
+Original: 123
+Hex: 313233
+Key:98fdvv09uev038fdu09ihvohasfasd54
+encrypted with AES
+53df96ad9300dd11a9100b42fc02c490
+
+decrypted AES:
+Hex: 313233
+ASCII: 123
+*/
+
