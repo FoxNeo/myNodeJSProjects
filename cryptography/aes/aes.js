@@ -1,17 +1,14 @@
 var forge = require("node-forge");
 var convertHex = require('convert-hex');
 
-// generate a random key and IV 
-//var key = forge.random.getBytesSync(16);
+// generate a random IV 
 var iv = forge.random.getBytesSync(8);
-
 var key = "98fdvv09uev038fdu09ihvohasfasd54";
 
 console.log("Original: "+ new Buffer("123","binary").toString());
 console.log("Hex: "+ "313233");
 
-console.log("Key:" + key); //"345501df"
-// encrypt some bytes 
+console.log("Key:" + key);
 //var cipher = forge.rc2.createEncryptionCipher(key);
 var cipher = forge.cipher.createCipher('AES-CBC', key);
 cipher.start({iv: iv});
@@ -24,7 +21,6 @@ console.log(encrypted.toHex());
  
 console.log('\n'+ "decrypted AES: "); 
 // decrypt some bytes 
-//var cipher = forge.rc2.createDecryptionCipher(key);
 var decipher = forge.cipher.createDecipher('AES-CBC', key);
 decipher.start({iv: iv});
 decipher.update(encrypted);
@@ -35,6 +31,7 @@ console.log("Hex: " + decipher.output.toHex().toString());
 console.log("ASCII: "+ hex2a(decipher.output.toHex()));
 
 
+// standard function to convert Hex to ASCII
 function hex2a(hexx) {
     var hex = hexx.toString();//force conversion
     var str = '';
