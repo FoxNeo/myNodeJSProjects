@@ -1,0 +1,19 @@
+{
+  "name": "aes",
+  "version": "0.0.1",
+  "description": "Sample to encrypt some data with aes",
+  "main": "aes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "use",
+    "library",
+    "node-foge"
+  ],
+  "author": "Miguel Caceres",
+  "license": "ISC",
+  "dependencies": {
+    "convert-hex": "0.0.1"
+  }
+}
