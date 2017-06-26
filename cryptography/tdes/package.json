@@ -1,0 +1,14 @@
+{
+  "name": "tdes",
+  "version": "0.0.1",
+  "description": "sample to encrypt data with TDES and node-forge",
+  "main": "3des.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TDES"
+  ],
+  "author": "Miguel Caceres",
+  "license": "ISC"
+}
