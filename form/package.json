@@ -1,0 +1,11 @@
+{
+  "name": "form",
+  "version": "0.0.1",
+  "description": "sample showcase to get params from the form to the script",
+  "main": "form_params.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Caceres",
+  "license": "ISC"
+}
