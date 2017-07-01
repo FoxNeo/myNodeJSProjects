@@ -3,8 +3,10 @@ var express = require("express");
 
 var app = express();
 
+app.set("view engine", "jade");
+
 app.get("/", function(req, res){
-	res.send("Server time: " + new Date().toString());
+	res.render("index", {greetings: "Hello user"});
 });
 
 app.listen(8080);
