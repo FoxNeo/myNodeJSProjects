@@ -15,5 +15,7 @@ console.log('starting server...');
 https.createServer(options, function (req, res) {
     res.writeHead(200);
     res.end("Hi from HTTPS");
+    console.log("Request from browser GET");
+    console.log(req.url);
 }).listen(https_port);
 console.log(`Server port: ${https_port}`)
