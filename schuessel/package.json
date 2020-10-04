@@ -1,0 +1,14 @@
+{
+  "name": "schuessel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "implement.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "schluessel": "^1.0.2"
+  }
+}
